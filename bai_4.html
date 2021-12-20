@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<p><b>Bài 4: </b>Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó</p>
+<script>
+    let arrs = [9,2,8,2,7,6,5];
+    let x = 0;
+    let y = arrs.length -1;
+    while (x < y){
+        let a = arrs[x];
+        arrs[x] = arrs[y];
+        arrs[y] = a;
+        x++;
+        y--;
+    }document.write(arrs);
+</script>
+</body>
+</html>

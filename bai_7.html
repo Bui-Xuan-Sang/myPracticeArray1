@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<p><b>Bài 7:</b>Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+    Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở
+    đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)</p>
+<script>
+    let arrs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let V = parseInt(prompt("Nhập V"));
+    let index = -1;
+    for (let i = 0; i < arrs.length; i++) {
+        if (arrs[i] == V) {
+            index = i;
+            arrs.splice(i, 1);
+            arrs.push(0);
+            break;
+        }
+
+    }
+    if (index != -1) {
+        document.write('Mảng sau khi xóa' + ' ' + V + ' ' + 'là:' + arrs);
+    }else {
+        document.write('Không có trong mảng')
+    }
+
+
+</script>
+</body>
+</html>
